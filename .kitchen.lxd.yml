@@ -1,0 +1,18 @@
+---
+driver:
+  name: lxd_cli
+
+provisioner:
+  name: policyfile_zero
+
+#transport:
+  #  name: rsync
+#  ssh_key: ~/.ssh/id_rsa
+
+platforms:
+  - name: ubuntu-16.04
+    driver:
+      image_name: ubuntu-daily:xenial/amd64
+
+suites:
+  - name: default
