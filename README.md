@@ -1,4 +1,3 @@
 # demo
 
-TODO: Enter the cookbook description here.
-
+Demo of Policyfiles consuming lock files from other git repositories.

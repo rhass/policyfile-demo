@@ -14,7 +14,9 @@ include_policy 'cronner',
                path: 'nested_test/Policyfile.lock.json'
 
 include_policy 'jenkins',
-#                git: 'https://github.com/danielsdeleo/policyfile-jenkins-demo'
+  #             git: 'https://github.com/rhass/policyfile-jenkins-demo'
+  #             Relative paths cannot be used for git repos on disk. You must
+  #             use absolute paths in this particular use case.
                 git: '/home/rhass/src/policyfile-jenkins-demo'
 
 # run_list: chef-client will run these recipes in the order specified.
